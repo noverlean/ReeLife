@@ -1,0 +1,129 @@
+/* akaya-kanadaka-regular - latin */
+@font-face {
+  font-family: 'Akaya Kanadaka';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/akaya-kanadaka-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/akaya-kanadaka-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}  
+/* anton-regular - latin */
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/anton-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/anton-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html
+{
+  box-sizing: border-box;
+}
+
+:root {
+  --main-brown: rgb(229, 151, 43);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+*,*::before,*::after
+{
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body
+{
+  height: 200vh;
+}
+
+nav
+{
+  position: absolute;
+  top: 0px;
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+a
+{
+  font-family: 'Akaya Kanadaka';
+  font-style: normal;
+  font-weight: 400;
+  margin: 0px 50px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+a:hover {
+  background-size: 100% 2px;
+}
+
+.background_pic
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../image/Fon.jpg");
+  background-size:cover;
+  
+  
+}
+
+.header_logo_pic
+{
+  max-width: 30%;
+  max-height: 18%;
+  background-size: cover;
+  color: white;
+  font-size: 100px;
+}
+
+.contactBtn
+{
+  font-family: 'Anton';
+  margin-top: 45px;
+  font-style: normal;
+  color:white;
+  border-radius: 6px;
+  width: 12%;
+  height: 47.12px;
+  background: grey;
+  text-align: center;
+  line-height: 50px;
+}
+
+.contactBtn:hover
+{
+  box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+}
+
+.background2
+{
+ position:absolute;
+  top: 755px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../image/underfon.jpg");
+  background-size:cover;
+}
