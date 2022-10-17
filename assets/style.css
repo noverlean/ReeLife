@@ -73,6 +73,22 @@ a:hover {
   background-size: 100% 2px;
 }
 
+h1
+{
+  color: white;
+  font-family: 'Akaya Kanadaka';
+  font-style: normal;
+  font-size: 50px;
+}
+
+h3
+{
+  color: white;
+  font-family: 'Akaya Kanadaka';
+  font-style: normal;
+  font-size: 25px;
+}
+
 .background_pic
 {
   display: flex;
@@ -117,8 +133,6 @@ a:hover {
 
 .background2
 {
- position:absolute;
-  top: 755px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,4 +141,21 @@ a:hover {
   height: 100vh;
   background-image: url("../image/underfon.jpg");
   background-size:cover;
+}
+
+.products
+{
+  display: grid;
+  margin-top: 5vh;
+  grid-template-columns: repeat(3, 1fr);
+  width: 70%;
+  height: 75vh;
+  grid-column-gap: 10%;
+  grid-row-gap: 10%;
+}
+
+.currentProduct
+{
+  background: white;
+  border-radius: 16px;
 }
