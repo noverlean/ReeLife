@@ -24,6 +24,9 @@ html
 
 :root {
   --main-brown: rgb(229, 151, 43);
+  --gold: #D4B069;
+  --grey: #959595;
+  --dark: #000;
 }
 
 ::-webkit-scrollbar {
@@ -156,6 +159,35 @@ h3
 
 .currentProduct
 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
   background: white;
   border-radius: 16px;
+  padding: 5%;
+  height: 90%;
+  color: var(--grey);
+  font-size: 14px;
+}
+
+.title
+{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 25px;
+  margin-top: .5vh;
+  margin-bottom: 1vh;
+}
+
+.price
+{
+  color: var(--gold);
+}
+
+.name
+{
+  color: var(--dark);
 }
