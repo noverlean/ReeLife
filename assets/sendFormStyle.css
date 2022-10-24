@@ -5,6 +5,11 @@ html
     scroll-behavior: smooth;
 }
 
+:root {
+    --green: #419741;
+    --transparent: rgba(255, 255, 255, 0);
+}
+
 body 
 {
     overflow: hidden;
@@ -27,7 +32,7 @@ input
 {
     height: 30px;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: var(--transparent);
     border: 3px solid;
     margin-bottom: 3vh;
     border-color: white;
@@ -40,7 +45,7 @@ input
 
 input:focus
 {
-    border-color: #419741;
+    border-color: var(--green);
 }
 
 input::placeholder {
@@ -59,7 +64,7 @@ label
 {
     height: 5vh;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: var(--transparent);
     border: 3px solid;
     margin-bottom: 2vh;
     border-color: white;
@@ -74,12 +79,12 @@ label
 
 .submit:hover
 {
-    background-color: #419741;
+    background-color: var(--green);
 }
 
 .frame
 {
-    background-color: #41974100;
+    background-color: var(--transparent);
     border: 5px white solid;
     height: 90px;
     width: 60px;
@@ -101,7 +106,7 @@ label
 
 .back
 {
-    background-color: #41974100;
+    background-color: var(--transparent);
     border: 5px white solid;
     height: 80px;
     width: 200px;

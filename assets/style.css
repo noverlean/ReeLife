@@ -27,6 +27,9 @@ html
   --gold: #D4B069;
   --grey: #959595;
   --dark: #000;
+  --green: #93eb93;
+  --green-dark: #1e5f1e;
+  --transparent: rgba(255, 255, 255, 0);
 }
 
 ::-webkit-scrollbar {
@@ -56,7 +59,7 @@ nav
   align-items: center;
 }
 
-a 
+nav a 
 {
   font-family: 'Akaya Kanadaka';
   font-style: normal;
@@ -72,7 +75,7 @@ a
   transition: background-size .3s;
 }
 
-a:hover {
+nav a:hover {
   background-size: 100% 2px;
 }
 
@@ -149,6 +152,7 @@ h3
 .products
 {
   display: grid;
+  flex-wrap: wrap;
   margin-top: 5vh;
   grid-template-columns: repeat(3, 1fr);
   width: 70%;
@@ -161,20 +165,35 @@ h3
 {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
-  width: 100%;
+  width: 105%;
   background: white;
   border-radius: 16px;
   padding: 5%;
-  height: 90%;
+  height: 95%;
   color: var(--grey);
   font-size: 14px;
+  vertical-align: middle;
+  transition: all .4s linear;
 }
+
+.currentProduct:hover
+{
+  background: var(--green);
+}
+
+/* .currentProduct::after
+{
+  content: "";
+  height: 100%;
+  width: 100%;
+} */
 
 .title
 {
   display: flex;
+  height: 20%;
   width: 100%;
   justify-content: space-between;
   font-size: 25px;
@@ -190,4 +209,23 @@ h3
 .name
 {
   color: var(--dark);
+}
+
+.buyBtn
+{
+  background-color: var(--green);
+  display: block;
+  margin-top: 5px;
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
+  line-height: .9;
+  font-family: 'Anton';
+  color: white;
+  transition: all .3s linear;
+}
+
+.buyBtn:hover
+{
+  background-color: var(--green-dark);
 }
