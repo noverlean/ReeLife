@@ -28,7 +28,7 @@ function Send(){
     );
     
     $.ajax({
-        url: 'senderToEmail.php',
+        url: 'newRecord.php',
         method: 'post',
         dataType: 'json',
         data: {
