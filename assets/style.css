@@ -1,0 +1,241 @@
+/* akaya-kanadaka-regular - latin */
+@font-face {
+  font-family: 'Akaya Kanadaka';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/akaya-kanadaka-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/akaya-kanadaka-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}  
+/* anton-regular - latin */
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/anton-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/anton-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html
+{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-brown: rgb(229, 151, 43);
+  --gold: #D4B069;
+  --grey: #959595;
+  --dark: #000;
+  --green: #93eb93;
+  --green-dark: #1e5f1e;
+  --transparent: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+*,*::before,*::after
+{
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body
+{
+  height: 200vh;
+}
+
+nav
+{
+  position: absolute;
+  top: 0px;
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a 
+{
+  font-family: 'Akaya Kanadaka';
+  font-style: normal;
+  font-weight: 400;
+  margin: 0px 50px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+nav a:hover {
+  background-size: 100% 2px;
+}
+
+h1
+{
+  color: white;
+  font-family: 'Akaya Kanadaka';
+  font-style: normal;
+  font-size: 50px;
+}
+
+h3
+{
+  color: white;
+  font-family: 'Akaya Kanadaka';
+  font-style: normal;
+  font-size: 25px;
+}
+
+.background_pic
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../image/Fon.jpg");
+  background-size:cover;
+  
+  
+}
+
+.header_logo_pic
+{
+  max-width: 30%;
+  max-height: 18%;
+  background-size: cover;
+  color: white;
+  font-size: 100px;
+}
+
+.contactBtn
+{
+  font-family: 'Anton';
+  margin-top: 45px;
+  font-style: normal;
+  color:white;
+  border-radius: 6px;
+  width: 12%;
+  height: 47.12px;
+  background: var(--green-dark);
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  transition: all .3s linear;
+}
+
+.contactBtn:hover
+{
+  box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+  background: var(--grey);
+}
+
+.background2
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../image/underfon.jpg");
+  background-size:cover;
+}
+
+.products
+{
+  display: grid;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+  grid-template-columns: repeat(3, 1fr);
+  width: 70%;
+  height: 75vh;
+  grid-column-gap: 10%;
+  grid-row-gap: 10%;
+}
+
+.currentProduct
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 105%;
+  background: white;
+  border-radius: 16px;
+  padding: 5%;
+  height: 95%;
+  color: var(--grey);
+  font-size: 14px;
+  vertical-align: middle;
+  transition: all .4s linear;
+}
+
+.currentProduct:hover
+{
+  background: var(--green);
+}
+
+/* .currentProduct::after
+{
+  content: "";
+  height: 100%;
+  width: 100%;
+} */
+
+.title
+{
+  display: flex;
+  height: 20%;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 25px;
+  margin-top: .5vh;
+  margin-bottom: 1vh;
+}
+
+.price
+{
+  color: var(--gold);
+}
+
+.name
+{
+  color: var(--dark);
+}
+
+.buyBtn
+{
+  background-color: var(--green);
+  display: block;
+  margin-top: 5px;
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
+  line-height: .9;
+  font-family: 'Anton';
+  color: white;
+  transition: all .3s linear;
+}
+
+.buyBtn:hover
+{
+  background-color: var(--green-dark);
+}
+
+.secondAnchor
+{
+  position: absolute;
+  top: 100vh;
+}
