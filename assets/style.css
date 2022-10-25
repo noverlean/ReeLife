@@ -153,6 +153,58 @@ h3
   background-size:cover;
 }
 
+.background3
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../image/background5.jpg");
+  background-size:cover;
+}
+
+.containerImage
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 100vh;
+  background-size:cover;
+}
+
+.onePicture
+{
+  width:35%;
+  height:90%;
+  background-image: url("..//image/6868696539_7db37217ca_o\ 1.jpg");
+}
+.TwoPicture
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-size:cover;
+  width: 60%;
+  height:90%;
+}
+.first
+{
+  width:90%;
+  height: 65%;
+  background-image: url("../image/17960191985_1a85dbdd8b_o\ 1.jpg");
+  background-size: cover;
+}
+.second
+{
+  width:90%;
+  height: 30%;
+  background-image: url("../image/9552297967_c8b7f126bd_o\ 1.jpg") ;
+}
 .products
 {
   display: grid;
