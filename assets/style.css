@@ -105,9 +105,7 @@ h3
   width: 100%;
   height: 100vh;
   background-image: url("../image/Fon.jpg");
-  background-size:cover;
-  
-  
+  background-size:cover;  
 }
 
 .header_logo_pic
