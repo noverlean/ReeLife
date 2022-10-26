@@ -1,0 +1,76 @@
+:root {
+    --green: #419741;
+    --transparent: rgba(255, 255, 255, 0);
+}
+
+body
+{
+    width: 100%;
+	height: 100vh;
+	background-image: url('../image/background.jpg');
+	background-size: cover;
+    display: flex;
+    margin: 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.listContainer
+{
+    width: 60%;
+    height: auto;
+    padding: 2%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.order
+{
+    height: 8vh;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border: var(--green) 2px solid;
+}
+
+.order:last-child
+{
+    border-radius: 0px 0px 15px 15px;
+}
+
+.order:first-child
+{
+    border-radius: 15px 15px 0px 0px;
+}
+
+.id
+{
+    width: 10%;
+    color: black;
+    font-size: 26px;
+}
+
+.name
+{
+    width: 20%;
+    color: black;
+    font-size: 26px;
+}
+
+.code
+{
+    width: 10%;
+    color: black;
+    font-size: 26px;
+}
+
+.type
+{
+    width: 60%;
+    color: black;
+    font-size: 26px;
+}
