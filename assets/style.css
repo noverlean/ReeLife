@@ -16,7 +16,15 @@
        url('../fonts/anton-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/anton-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
+/* fuzzy-bubbles-regular - latin */
+@font-face {
+  font-family: 'Fuzzy Bubbles';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/fuzzy-bubbles-v5-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/fuzzy-bubbles-v5-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 html
 {
   box-sizing: border-box;
@@ -176,10 +184,40 @@ h3
 
 .onePicture
 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width:35%;
   height:90%;
   background-size: cover;
   background-image: url("..//image/6868696539_7db37217ca_o\ 1.jpg");
+}
+.onePicture .text
+{
+  opacity: 0;
+  color:white;
+  font-family: 'Fuzzy Bubbles';
+  font-style: normal;
+  font-weight: 400;
+
+  padding: 15%;
+
+}
+.onePicture:hover .text
+{
+ opacity: 1;
+}
+.onePicture .back
+{
+  width:100%;
+  height:100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 13.39%, rgba(206, 139, 61, 0.78) 100%);
+  visibility:hidden;
+}
+.onePicture:hover .back
+{
+  visibility:visible;
 }
 .TwoPicture
 {
@@ -191,20 +229,23 @@ h3
   width: 60%;
   height:90%;
 }
+
 .first
 {
   width:90%;
   height: 60%;
-  background-image: url("../image/17960191985_1a85dbdd8b_o\ 1.jpg");
+  background-image: url("../image/9552297967_c8b7f126bd_o\ 1.jpg") ;
   background-size: cover;
 }
+
 .second
 {
   width:90%;
   height: 35%;
   background-size: cover;
-  background-image: url("../image/9552297967_c8b7f126bd_o\ 1.jpg") ;
+  background-image: url("../image/17960191985_1a85dbdd8b_o\ 1.jpg");
 }
+
 .products
 {
   display: grid;
