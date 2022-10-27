@@ -9,7 +9,7 @@ function SaveType(type){
 }
 
 function Send(){
-alert(localStorage.coffee);
+    alert(localStorage.coffee);
 
     code = GenerateCode();
 
