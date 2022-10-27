@@ -24,7 +24,7 @@ function Send(){
     );
     
     $.ajax({
-        url: '../newRecord.php',
+        url: '../php/newRecord.php',
         method: 'post',
         dataType: 'json',
         data: {
