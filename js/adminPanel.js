@@ -12,7 +12,7 @@ function LoadList(){
     var result;
 
     $.ajax({
-        url: '../GetRecords.php',
+        url: '../php/GetRecords.php',
         method: 'get',
         dataType: 'json',
         success: function(data){

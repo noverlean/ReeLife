@@ -4,14 +4,21 @@
     if ($DataBase == false)
         echo "Error: failed connection to database.";
 
-    $sql = 'SELECT * FROM `users` WHERE 1';
+    $sql = 'SELECT * FROM `orders` WHERE 1';
 
     $request = mysqli_query($DataBase, $sql);
 
-    if ($request)
-        echo json_encode($request);
-    else
-        echo '{"state":"300"}';
+    while ($row = mysqli_fetch_array($request, MYSQLI_NUM)) {
+        echo $row[0];
+        //echo json_encode($row[0]);
+        //echo '{"id":' . $row["id"] . ',"name":' . $row["name"] . ',"code":' . $row["code"] . ',"type":' . $row["type"] . '}';
+        echo '{"id":'.$row[0].',"code":'.$row[2].'}';
+    }
+
+     //if ($request)
+     //    
+     //else
+     //    echo '{"state":"300"}';
 
     mysqli_close($DataBase);
 ?>
