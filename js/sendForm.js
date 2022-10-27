@@ -9,8 +9,6 @@ function SaveType(type){
 }
 
 function Send(){
-    alert(localStorage.coffee);
-
     code = GenerateCode();
 
     document.querySelector('.mainFrame').innerHTML = '';
@@ -35,10 +33,6 @@ function Send(){
             name: _name.value,
             type: localStorage.getItem('coffee'),
             code: this.code
-        },
-        success: function(data){
-                alert(data.text);    /* выведет "Текст" */
-                alert(data.error);   /* выведет "Ошибка" */
         }
     });
 }
