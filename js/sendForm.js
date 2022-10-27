@@ -31,7 +31,7 @@ function Send(){
         dataType: 'json',
         data: {
             name: _name.value,
-            type: localStorage.getItem('coffee'),
+            type: localStorage.coffee,
             code: this.code
         }
     });
