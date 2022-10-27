@@ -10,7 +10,7 @@ function buildProducts(){
             '        <div class="price">' + menu[i].price + '$</div>' +
             '    </div>' +
                 menu[i].content +
-            '    <a class="buyBtn" href="sendForm.html" onclick="SaveType(' + menu[i].title + ')">Заказать</a>' +
+            '    <div class="buyBtn" onclick="SaveType(`' + menu[i].title + '`)">Заказать</div>' +
             '</div>'
         );
     }          

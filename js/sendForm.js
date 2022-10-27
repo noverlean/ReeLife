@@ -3,10 +3,14 @@ var _name = document.getElementById('name');
 var GenerateCode = () => String(Math.floor(Math.random() * 10)) + String(Math.floor(Math.random() * 10)) + String(Math.floor(Math.random() * 10)) + String(Math.floor(Math.random() * 10));
 
 function SaveType(type){
-    localStorage.setItem('coffee', type);
+    localStorage.coffee = type;
+
+    window.open('sendForm.html');
 }
 
 function Send(){
+alert(localStorage.coffee);
+
     code = GenerateCode();
 
     document.querySelector('.mainFrame').innerHTML = '';
