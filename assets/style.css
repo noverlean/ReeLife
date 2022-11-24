@@ -25,6 +25,15 @@
        url('../fonts/fuzzy-bubbles-v5-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/fuzzy-bubbles-v5-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* handlee-regular - latin */
+@font-face {
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/handlee-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/handlee-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 html
 {
   box-sizing: border-box;
@@ -118,11 +127,12 @@ h3
 
 .header_logo_pic
 {
+  font-family: 'Handlee';
   max-width: 30%;
   max-height: 18%;
   background-size: cover;
   color: white;
-  font-size: 100px;
+  font-size: 150px;
 }
 
 .contactBtn
