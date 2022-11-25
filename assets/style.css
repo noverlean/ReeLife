@@ -267,6 +267,7 @@ footer .news
   height:70%;
   background-size: cover;
   background-image: url("..//image/6868696539_7db37217ca_o\ 1.jpg");
+  border-radius: 15px;
 }
 
 .onePicture .text
@@ -277,9 +278,7 @@ footer .news
   font-style: normal;
   font-size: 20px;
   font-weight: 400;
-
   padding: 15%;
-
 }
 
 .onePicture:hover .text
@@ -311,9 +310,7 @@ footer .news
   font-style: normal;
   font-size: 20px;
   font-weight: 400;
-
   padding: 15%;
-
 }
 
 .first:hover .text
@@ -332,6 +329,7 @@ footer .news
   height: 60%;
   background-image: url("../image/9552297967_c8b7f126bd_o\ 1.jpg") ;
   background-size: cover;
+  border-radius: 15px;
 }
 
 .second
@@ -340,6 +338,7 @@ footer .news
   height: 35%;
   background-size: cover;
   background-image: url("../image/17960191985_1a85dbdd8b_o\ 1.jpg");
+  border-radius: 15px;
 }
 
 .second:hover .text
