@@ -48,6 +48,7 @@ html
   --green: #6DAF6D;
   --green-dark: #1e5f1e;
   --transparent: rgba(255, 255, 255, 0);
+  --transparent-dark: rgba(0, 0, 0, 0.607);
 }
 
 ::-webkit-scrollbar {
@@ -111,6 +112,69 @@ h3
   font-family: 'Akaya Kanadaka';
   font-style: normal;
   font-size: 25px;
+}
+
+footer
+{
+  height: 55px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  background-color: var(--transparent-dark);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+footer a
+{
+  height: 40px;
+  width: 40px;
+  background-size: cover;
+  margin: 0px 20px;
+}
+
+footer p
+{
+  height: 40px;
+  width: auto;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  margin: 0px 20px;
+  line-height: 3;
+  position: absolute;
+  left: 60px;
+}
+
+footer .main
+{
+  background-image: url('../image/icons8-windows-10-48.png');
+  position: absolute;
+  left: 0px;
+}
+
+footer .menu
+{
+  background-image: url('../image/icons8-menu-58.png');
+}
+
+footer .coffeeF
+{
+  background-image: url('../image/icons8-кофе-с-собой-96.png');
+}
+
+footer .news
+{
+  background-image: url('../image/icons8-новости-64.png');
+}
+
+.mainH
+{
+  position: absolute;
+  top: 0;
 }
 
 .background_pic
