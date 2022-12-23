@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ReeLife - онлайн кофейня твоего города!</title>
+        <link rel="stylesheet" href="./assets/style.css">
+        <link href="assets/coffeeBuilderStyle.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="background_pic">
+                <nav>
+                    <a href="#menu">MENU</a>
+                    <a href="#about">ABOUT</a>
+                    <a name="main" class="mainH"></a>
+                </nav>
+                <div class="header_logo_pic">
+                    ReeLife
+                </div>
+                <a id="coffeeScroll" class="contactBtn" href="#builder">
+                    Build My Coffee
+                </a>
+            </div>
+            <div class="background2" name="menu">
+                <a name="menu" class="secondAnchor"></a>
+                <h1>What kind of Coffee we serve for you</h1>
+                <h3>Start your journey from here</h3>
+                <div class="products">
+                
+                </div>
+            </div> 
+        </header> 
+
+        <main class="backgroundMainPage">
+            <a name="builder" class="builder"></a>
+            <div class="buttons">
+                <button id="coffee" class="addBtn">Add Coffe</button>
+                <button id="milk" class="addBtn">Add Milk</button>
+                <button id="syrup" class="addBtn">Add Syrup</button>
+                <button id="clear" class="addBtn clearBtn">Clear</button>
+            </div>
+            
+            <div class="coffeBuilderContainer">
+                <div class="backCup">
+                    <div class="addMlCountConteinerCup">
+                        Размер кружки
+                        <div class="incDecContainerCup">
+                            <button id="ml150" class="addBtn incDecBtnCup">150</button>
+                            <button id="ml200" class="addBtn incDecBtnCup">200</button>
+                            <button id="ml300" class="addBtn incDecBtnCup">300</button>
+                        </div>
+                    </div>
+                    <div class="maskCup"></div>
+                    <div id="container" class="conteiner">
+    
+                    </div>
+                    <p class="mlCount" id="mlCount">0/300 ml</p>
+                    <div class="addMlCountConteiner">
+                        Добавить в размере
+                        <p id="addMlCount" class="addMlCount">50 ml</p>
+                        <div class="incDecContainer">
+                            <button id="inc" class="addBtn incDecBtn">+</button>
+                            <button id="dec" class="addBtn clearBtn incDecBtn">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <a id="sendCoffee" class="addBtn" onclick="SaveType('custom')">ЗАКАЗАТЬ</a>
+        </main>
+        <div class="background3">
+            <a name="about" class="about"></a>
+            <div class="containerImage">
+                <div class="onePicture">
+                    <div class="text">On August 14, a new set will be released that includes: juice, coffee and a dessert to cheer you up. To use the coupon, go to our barista and say the promo code "Kislyuk".</div>
+                
+                </div>
+                <div class="TwoPicture">
+                    <div class="first">
+                        <div class="text">Only today (22.11.2022) you can get total discount with great secvice in our place - ReeLife Coffee!</div>
+                    </div>
+                    <div class="second">
+                        <div class="text">14 of August - Black Date - We Was Opened!!!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <a class="main" href="#main"></a>
+            <p>г. Минск, ул. Новерлина, 4, 20</p>
+            <a class="menu" href="#menu"></a>
+            <a class="coffeeF" href="#builder"></a>
+            <a class="news" href="#about"></a>
+        </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="js/db.js"></script>
+        <script src="js/sendForm.js"></script>
+        <script src="js/builder.js"></script>
+	    <script src="js/coffeeBuilder.js"></script>
+        <script src="js/tests.js"></script>
+    </body>
+</html>
