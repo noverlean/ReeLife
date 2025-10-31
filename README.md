@@ -1,59 +1,64 @@
-# ☕ ReeLife — Веб-сайт для заказа кофе
+## 🌐 Языки / Languages
 
-Добро пожаловать в CoffeeOrder — удобный и стильный сайт, где вы можете выбрать готовый напиток или собрать свой идеальный кофе с нуля. Проект разработан для упрощения взаимодействия между клиентом и бариста.
+- 🇷🇺 [Русский](README.ru.md)
 
-## 📄 Описание
+# ☕ ReeLife — Coffee Ordering Website
 
-CoffeeOrder — это одностраничное приложение с несколькими разворотами:
+Welcome to CoffeeOrder — a convenient and stylish site where you can choose a ready-made drink or build your perfect coffee from scratch. This project is designed to simplify interaction between customers and baristas.
 
-### 🧭 Структура `index.html`
+## 📄 Description
 
-1. **Главная заставка**  
-   Приветственный экран с кнопкой перехода к выбору напитка.
+CoffeeOrder is a single-page application with multiple sections:
 
-2. **Готовые варианты кофе**  
-   Быстрый выбор популярных напитков: капучино, латте, эспрессо и др.
+### 🧭 Structure of `index.html`
 
-3. **Конструктор кофе**  
-   Возможности:
-   - Выбор основы (кофе)
-   - Добавление сиропа, молока
-   - Настройка размера кружки
-   - Выбор количества добавок
+1. **Landing Screen**  
+   A welcome screen with a button to proceed to drink selection.
 
-4. **Галерея кофейни**  
-   Фото интерьера, атмосферы и напитков.
+2. **Ready-Made Coffee Options**  
+   Quick selection of popular drinks: cappuccino, latte, espresso, and more.
 
-### 📝 Страница оформления заказа
+3. **Coffee Constructor**  
+   Features:
+   - Choose a base (coffee)
+   - Add syrup, milk
+   - Customize cup size
+   - Select number of add-ons
 
-- Ввод имени
-- Получение уникального кода заказа
-- Код добавляется в админ-панель для бариста
+4. **Coffee Shop Gallery**  
+   Photos of the interior, atmosphere, and drinks.
 
-### 🧑‍🍳 Админ-панель бариста
+### 📝 Order Submission Page
 
-- Просмотр заказов с ингредиентами
-- Возможность удаления выполненных заказов
+- Enter your name
+- Receive a unique order code
+- The code is added to the barista admin panel
 
-## 🛠️ Технологии
+### 🧑‍🍳 Barista Admin Panel
 
-- HTML, CSS, JavaScript, Php
-- Локальное хранилище или mock-сервер
-- Адаптивная верстка
+- View orders with ingredients
+- Option to delete completed orders
 
-## 📸 Скриншоты
+## 🛠️ Technologies
 
-Ниже представлен пример интерфейса сайта:
+- HTML, CSS, JavaScript, PHP
+- Local storage or mock server
+- Responsive layout
 
-### 🖼️ Главная заставка
-![Главная заставка](./screenshots/main.png)
-### 🖼️ Кофе
-![Главная заставка](./screenshots/coffee.png)
-### 🖼️ Конструктор кофе
-![Главная заставка](./screenshots/constructor.png)
-### 🖼️ Фото
-![Главная заставка](./screenshots/photos.png)
-### 🖼️ Прием заказа
-![Главная заставка](./screenshots/order.png)
-### 🖼️ Код заказа
-![Главная заставка](./screenshots/order_code.png)
+## 📸 Screenshots
+
+Below is an example of the site interface:
+
+### 🖼️ Landing Screen
+![Landing Screen](./screenshots/main.png)
+### 🖼️ Coffee
+![Coffee](./screenshots/coffee.png)
+### 🖼️ Coffee Constructor
+![Coffee Constructor](./screenshots/constructor.png)
+### 🖼️ Photos
+![Photos](./screenshots/photos.png)
+### 🖼️ Order Submission
+![Order Submission](./screenshots/order.png)
+### 🖼️ Order Code
+![Order Code](./screenshots/order_code.png)
+
